@@ -15,7 +15,16 @@ Was advised to use next classes: Dish, Order, Message, Menu, Customer, Takeway.
 
 #####CRC
 
-Class Takeaway:
+**Class Takeaway:**
+
+Responsibilities               | Collaborators
+-------------------------------|-------------------------
+1. take order from customer    | 1. Dish
+2. send message to customer    | 2. Customer
+once order received            | 3. Menu
+                               | 4. Message
+                               | 5. Order
+
 
 responsibilities | collaborators 
 --------------------------------
