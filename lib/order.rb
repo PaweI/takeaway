@@ -1,9 +1,10 @@
 class Order
 
-  attr_reader :dishes
+  attr_reader :dishes, :outstanding_amount
 
   def initialize
     @dishes = []
+    @paid = false
   end
 
   def add(dish)
@@ -21,9 +22,11 @@ class Order
     result
   end
 
+  def paid?
+    @paid
+  end
 
-
-
-
-
+  def receive_money
+    @paid = true
+  end
 end
