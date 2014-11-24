@@ -1,4 +1,4 @@
-class Customer
+class Customer < Struct.new(:name, :mobile_number)
 
   def look_at(menu)
     menu.dishes
