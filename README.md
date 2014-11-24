@@ -19,51 +19,51 @@ Was advised to use next classes: Dish, Order, Message, Menu, Customer, Takeway.
 
 Responsibilities               | Collaborators
 -------------------------------|-------------------------
-1. take order from customer    | 1. Dish
-2. send message to customer    | 2. Customer
-once order received            | 3. Menu
+1. Take order from customer    | 1. Dish
+2. Send message to customer    | 2. Customer
+   once order received         | 3. Menu
                                | 4. Message
                                | 5. Order
 
 
-responsibilities | collaborators 
---------------------------------
-initialize takeaway app | Menu
-take order from customer | Dish
-send message to customer once order received | Order
-create new dish | Customer
-place dish to the menu | Message
 
-Class Menu
-responsibilities | collaborators 
---------------------------------
-list all dishes available and their prices | Dish
-be able to add new dish | Takeaway
-be able to delete dish |
 
-Class Dish
-responsibilities | collaborators 
---------------------------------
-create new instance of dish |
-show descrition of the dish | Menu
-show price of the dish |
+**Class Menu:**
 
-Class Order
-responsibilities | collaborators 
---------------------------------
-list dishes placed to order | Menu
-show their prices | Takeaway
-show total amount to pay |
+Responsibilities               | Collaborators
+-------------------------------|-------------------------
+1. List all dishes available   | 1. Dish
+   and their prices            | 2. Takeaway
+2. Be able to add new dish     |
+3. Be able to delete dish      |
 
-Class Customer
-responsibilities | collaborators 
---------------------------------
- Takeaway app | Takeaway
-choose dishes from the menu | Menu
-place an order | Order
+**Class Dish:**
 
-Class Message 
-responsibilities | collaborators 
---------------------------------
-send message to customer once order recived | Customer
-                                            |Takeaway
+Responsibilities               | Collaborators
+-------------------------------|-------------------------
+1. Create new instance of dish | 1. Menu
+2. Show descrition of the dish | 
+3. Ahow price of the dish      |
+
+**Class Order:**
+
+Responsibilities               | Collaborators
+-------------------------------|-------------------------
+1. List dishes placed to order | 1. Menu
+2. Show their prices           | 2. Takeaway
+3. Show total amount to pay    |
+
+**Class Customer:**
+
+Responsibilities               | Collaborators
+-------------------------------|-------------------------
+1. Choose dishes from the menu | 1. Menu
+2. Place an order              | 2. Order
+
+**Class Message:** 
+
+Responsibilities               | Collaborators
+-------------------------------|-------------------------
+1. Send message to customer    | 1. Customer
+   once  order recieved        | 2. Takeaway        
+                                          
