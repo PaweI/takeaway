@@ -35,6 +35,7 @@ be able to delete dish |
 Class Dish
 responsibilities | collaborators 
 --------------------------------
+create new instance of dish |
 show descrition of the dish | Menu
 show price of the dish |
 
@@ -48,13 +49,12 @@ show total amount to pay |
 Class Customer
 responsibilities | collaborators 
 --------------------------------
-open Takeaway app | Takeaway
+ Takeaway app | Takeaway
 choose dishes from the menu | Menu
 place an order | Order
-receive message about order | Message
 
 Class Message 
 responsibilities | collaborators 
 --------------------------------
 send message to customer once order recived | Customer
- | Takeaway
+                                            |Takeaway
