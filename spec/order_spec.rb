@@ -2,6 +2,8 @@ require 'order'
 
 describe Order do
 
+  it_behaves_like "menu_container"
+
   let(:order) { Order.new    }
   let(:dish)  { double :dish, price: 5 } 
 

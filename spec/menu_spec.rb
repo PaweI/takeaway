@@ -2,6 +2,8 @@ require 'menu'
 
 describe Menu do
 
+  it_behaves_like "menu_container"
+
   let(:menu) { Menu.new }
   let(:dish) { double name: "dish", price: 5 }
   let(:dish2) { double name: "dish2", price: 10 }
