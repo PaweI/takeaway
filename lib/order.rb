@@ -1,18 +1,10 @@
-class Order
+require_relative 'menu_container'
 
-  attr_reader :dishes, :outstanding_amount
+class Order
+  include MenuContainer
 
   def initialize
-    @dishes = []
     @paid = false
-  end
-
-  def add(dish)
-    dishes << dish
-  end
-
-  def cost(dish)
-    dish.price
   end
 
   def total_to_pay(result = 0)

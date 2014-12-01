@@ -65,5 +65,13 @@ Responsibilities               | Collaborators
 Responsibilities               | Collaborators
 -------------------------------|-------------------------
 1. Send message to customer    | 1. Customer
-   once  order recieved        | 2. Takeaway        
+   once  order recieved        | 2. Takeaway   
+
+####Technologies:
+
+- Ruby
+- Rspec for testing
+- Twilio API for messaging
+
+
                                           
