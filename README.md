@@ -17,53 +17,13 @@ Implement the following functionality:
 - Make sure that your Takeaway class is thoroughly tested and that you use mocks and/or stubs, as necessary to not to send texts when your tests are run
 However, if your Takeaway class is loaded into IRB and the order is placed, the text should actually be sent
 
-Was advised to use next classes: Dish, Order, Message, Menu, Customer, Takeway.
-
 ####MY APPROACH
 
+Was advised to use next classes: Dish, Order, Message, Menu, Customer, Takeway.
 
-####TECHNOLOGIES:
+I've got look at classes we were advised to implement and come up with some CRC cards for them. ==>
 
-- *Ruby*
-
-- *Rspec*
-
-- *Twilio API for messaging*
-
-#####PROGRAMMING CONCEPTS:
-
-- *Test driven development (TDD)*
-
-- *Object Oriented Design (OOD)*
-
-- *Object Oriented Programming (OOP)*
-
-- *Domain modeling*
-
-- *Kanban*
-
-####HOW TO RUN
-
-you will need to run firstly
-
-```
-bundle
-```
-in order to install twilio-ruby gem.
-
-Then you need to register with Twilio in order to get yours Authorisation tocken an Authorisation ID and put them into your .bash_profile as env variables:
-
-```
-export TWILIO_ID="your twilio id"
-export TWILIO_TOCKEN="your twilio tocken"
-```
-and then run 
-
-```
-ruby ./takeaway_app.rb
-```
-
-####MY CRC CARDS
+#####My CRC cards: 
 
 **Class Takeaway:**
 
@@ -113,6 +73,47 @@ Responsibilities               | Collaborators
 -------------------------------|-------------------------
 1. Send message to customer    | 1. Customer
    once  order recieved        | 2. Takeaway  
+
+####TECHNOLOGIES:
+
+- *Ruby*
+
+- *Rspec*
+
+- *Twilio API for messaging*
+
+#####PROGRAMMING CONCEPTS:
+
+- *Test driven development (TDD)*
+
+- *Object Oriented Design (OOD)*
+
+- *Object Oriented Programming (OOP)*
+
+- *Domain modeling*
+
+- *Kanban*
+
+####HOW TO RUN
+
+you will need to run firstly
+
+```
+bundle
+```
+in order to install twilio-ruby gem.
+
+Then you need to register with Twilio in order to get yours Authorisation tocken an Authorisation ID and put them into your .bash_profile as env variables:
+
+```
+export TWILIO_ID="your twilio id"
+export TWILIO_TOCKEN="your twilio tocken"
+```
+and then run 
+
+```
+ruby ./takeaway_app.rb
+```
 
 ####CODE SNIPPET
 
