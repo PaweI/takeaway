@@ -48,7 +48,7 @@ you will need to run firstly
 
 ```
 bundle
-``
+```
 in order to install twilio-ruby gem.
 
 Then you need to register with Twilio in order to get yours Authorisation tocken an Authorisation ID and put them into your .bash_profile as env variables:
