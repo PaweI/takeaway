@@ -1,4 +1,5 @@
 require 'menu'
+require_relative 'menu_shared_examples'
 
 describe Menu do
 

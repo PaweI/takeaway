@@ -1,4 +1,5 @@
 require 'order'
+require_relative 'menu_shared_examples'
 
 describe Order do
 

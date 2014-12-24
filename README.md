@@ -1,19 +1,69 @@
-Taks_2, Friday challenge at Makers Academy.
+####Taks_2. Week 2, Friday challenge at Makers Academy!
+
+####SYNOPSIS
 
 Write a Takeaway app.
+
 Implement the following functionality:
-list of dishes with prices
-placing the order by giving the list of dishes, their quantities and a number that should be the exact total. If the sum is not correct the method should raise an error, otherwise the customer is sent a text saying that the order was placed successfully and that it will be delivered 1 hour from now, e.g. "Thank you! Your order was placed and will be delivered before 18:52".
-The text sending functionality should be implemented using Twilio API. You'll need to register for it. It’s free.
-Use twilio-ruby gem to access the API
-Use a Gemfile to manage your gems
-Make sure that your Takeaway class is thoroughly tested and that you use mocks and/or stubs, as necessary to not to send texts when your tests are run
+
+- list of dishes with prices
+
+- placing the order by giving the list of dishes, their quantities and a number that should be the exact total. If the sum is not correct the method should raise an error, otherwise the customer is sent a text saying that the order was placed successfully and that it will be delivered 1 hour from now, e.g. "Thank you! Your order was placed and will be delivered before 18:52".The text sending functionality should be implemented using Twilio API. 
+
+- Use twilio-ruby gem to access the API
+
+- Use a Gemfile to manage your gems
+
+- Make sure that your Takeaway class is thoroughly tested and that you use mocks and/or stubs, as necessary to not to send texts when your tests are run
 However, if your Takeaway class is loaded into IRB and the order is placed, the text should actually be sent
-A free account on Twilio will only allow you to send texts to "verified" numbers. Use your mobile phone number, don't worry about the customer's mobile phone.
 
 Was advised to use next classes: Dish, Order, Message, Menu, Customer, Takeway.
 
-#####CRC
+####MY APPROACH
+
+
+####TECHNOLOGIES:
+
+- *Ruby*
+
+- *Rspec*
+
+- *Twilio API for messaging*
+
+#####PROGRAMMING CONCEPTS:
+
+- *Test driven development (TDD)*
+
+- *Object Oriented Design (OOD)*
+
+- *Object Oriented Programming (OOP)*
+
+- *Domain modeling*
+
+- *Kanban*
+
+####HOW TO RUN
+
+you will need to run firstly
+
+```
+bundle
+``
+in order to install twilio-ruby gem.
+
+Then you need to register with Twilio in order to get yours Authorisation tocken an Authorisation ID and put them into your .bash_profile as env variables:
+
+```
+export TWILIO_ID="your twilio id"
+export TWILIO_TOCKEN="your twilio tocken"
+```
+and then run 
+
+```
+ruby ./takeaway_app.rb
+```
+
+####MY CRC CARDS
 
 **Class Takeaway:**
 
@@ -24,9 +74,6 @@ Responsibilities               | Collaborators
    once order received         | 3. Menu
                                | 4. Message
                                | 5. Order
-
-
-
 
 **Class Menu:**
 
@@ -65,13 +112,16 @@ Responsibilities               | Collaborators
 Responsibilities               | Collaborators
 -------------------------------|-------------------------
 1. Send message to customer    | 1. Customer
-   once  order recieved        | 2. Takeaway   
+   once  order recieved        | 2. Takeaway  
 
-####Technologies:
+####CODE SNIPPET
 
-- Ruby
-- Rspec for testing
-- Twilio API for messaging
+I really like my Dish Class :-)
 
+![alt tag](https://github.com/PaweI/takeaway/blob/master/public/dish.png)
+
+####FUTURE IMPROVEMENTS
+
+I would like to improve messaging test in order to mock sending message. And want to avoid using message class, as it's seems unnecessary. 
 
                                           
