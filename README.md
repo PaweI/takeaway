@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/palyrex/takeaway/badges/gpa.svg)](https://codeclimate.com/github/palyrex/takeaway)
+
 ####Taks_2. Week 2, Friday challenge at Makers Academy!
 
 ####SYNOPSIS
