@@ -14,10 +14,4 @@ describe Dish do
     expect(dish.description).to eq "Lobster mayonnaise is a great way of enjoying the subtle flavours of this wonderful crustacean."
   end
 
-  it 'be able to add price to the dish' do
-    dish.price = 10
-    expect(dish.price).to eq 10
-  end
-
-
 end

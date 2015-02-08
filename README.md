@@ -127,8 +127,6 @@ class Dish < Struct.new(:name, :description, :price)
 end
 ```
 
-####FUTURE IMPROVEMENTS
 
-I would like to improve messaging test in order to mock sending message. And want to avoid using message class, as it's seems unnecessary. 
 
                                           

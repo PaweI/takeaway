@@ -8,9 +8,7 @@ class Order
   end
 
   def total_to_pay(result = 0)
-    dishes.each do |dish| 
-      result += dish[:price]
-    end
+    dishes.each { |dish| result += dish[1][:price] }
     result
   end
 

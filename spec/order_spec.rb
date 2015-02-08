@@ -6,23 +6,13 @@ describe Order do
 
   it_behaves_like "menu_container"
 
-  let(:order) { Order.new    }
-  let(:dish)  { double :dish, price: 5 } 
-
-  it 'should list all dishes in order' do
-    order.add(dish)
-    expect(order.dishes).to eq [dish]
-  end
-
-  it 'should show their prices' do
-    expect(order.cost(dish)).to eq 5    
-  end
+  let(:order)  { Order.new     }
+  let(:dish)   { double :dish  } 
+  let(:dish2)  { double :dish2 } 
 
   it 'should show total amount to pay' do
-    dish = { price: 5 }
-    dish2 = { price: 10 }
-    order.add(dish)
-    order.add(dish2)
+    order.add_dish(dish, 5)
+    order.add_dish(dish2, 10)
     expect(order.total_to_pay).to eq 15
   end
 

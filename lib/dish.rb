@@ -1,3 +1,3 @@
-class Dish < Struct.new(:name, :description, :price)
+class Dish < Struct.new(:name, :description)
 
 end
