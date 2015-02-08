@@ -1,3 +1,4 @@
+require 'spec_helper'
 require 'order'
 require_relative 'menu_shared_examples'
 

@@ -1,4 +1,4 @@
-[![Code Climate](https://codeclimate.com/github/palyrex/takeaway/badges/gpa.svg)](https://codeclimate.com/github/palyrex/takeaway)
+[![Code Climate](https://codeclimate.com/github/palyrex/takeaway/badges/gpa.svg)](https://codeclimate.com/github/palyrex/takeaway) [![Test Coverage](https://codeclimate.com/github/palyrex/takeaway/badges/coverage.svg)](https://codeclimate.com/github/palyrex/takeaway)
 
 ####Taks_2. Week 2, Friday challenge at Makers Academy!
 
@@ -121,7 +121,11 @@ ruby ./takeaway_app.rb
 
 I really like my Dish Class :-)
 
-![alt tag](https://github.com/PaweI/takeaway/blob/master/public/dish.png)
+```ruby
+class Dish < Struct.new(:name, :description, :price)
+
+end
+```
 
 ####FUTURE IMPROVEMENTS
 

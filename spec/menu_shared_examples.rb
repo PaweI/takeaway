@@ -1,3 +1,4 @@
+require 'spec_helper'
 require 'menu_container'
 
 shared_examples 'menu_container' do 
