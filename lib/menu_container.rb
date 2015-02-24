@@ -1,5 +1,4 @@
 module MenuContainer
-
   def dishes
     @dishes ||= {}
   end
@@ -9,11 +8,10 @@ module MenuContainer
   end
 
   def add_dish(dish, cost)
-    dishes[dish] = {price: cost}
+    dishes[dish] = { price: cost }
   end
 
   def cost(dish)
     @dishes[dish][:price]
   end
-
 end

@@ -3,12 +3,11 @@ require 'order'
 require_relative 'menu_shared_examples'
 
 describe Order do
+  it_behaves_like 'menu_container'
 
-  it_behaves_like "menu_container"
-
-  let(:order)  { Order.new     }
-  let(:dish)   { double :dish  } 
-  let(:dish2)  { double :dish2 } 
+  let(:order) { Order.new     }
+  let(:dish)  { double :dish  }
+  let(:dish2) { double :dish2 }
 
   it 'should show total amount to pay' do
     order.add_dish(dish, 5)
