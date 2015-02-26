@@ -16,11 +16,11 @@ describe Order do
   end
 
   it 'should be able to now if it\'s paid or not' do
-    expect(order.paid?).to be false
+    expect(order.paid).to be false
   end
 
   it 'should be able to receive money' do
     order.receive_money
-    expect(order.paid?).to be true
+    expect(order.paid).to be true
   end
 end

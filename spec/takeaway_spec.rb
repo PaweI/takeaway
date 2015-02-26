@@ -15,4 +15,4 @@ describe Takeaway do
   it 'sends message to customer once order received' do
     expect(takeaway.send_message_to_client('+447969959235')).to eq 'Message has been sent'
   end
-end 
+end

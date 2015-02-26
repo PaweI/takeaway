@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'menu_container'
 
-shared_examples 'menu_container' do 
+shared_examples 'menu_container' do
   let(:container) { described_class.new }
   let(:dish) { double :dish }
 
@@ -10,7 +10,7 @@ shared_examples 'menu_container' do
   end
 
   it 'should add dishes' do
-    expect { container.add_dish('squid', 5) }.to change { container.dishes.count }.by 1 
+    expect { container.add_dish('squid', 5) }.to change { container.dishes.count }.by 1
   end
 
   it 'should list all dishes' do
